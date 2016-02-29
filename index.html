@@ -3,30 +3,43 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Rina Dent</title>
+	
+	<!-- css Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-	<!-- Bootsrap -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css.map">
-
-	<!-- mis estilos -->
+	<!-- styles -->
 	<link rel="stylesheet" href="css/main.css">
-	
+		
 </head>
-<body>
-
-	<!-- login de usuario -->
-	<div class="jumbotron boxlogin">
-		<form>
-			<label>Nombre de Usuario</label>
-			<input type="text" name"usuario" value"Usuario" class="form-control"/>
-			<label>Contraseña</label>
-			<input type="password" name"contraseña" value"Contraseña" class="form-control"/>
-			<input type="submit" class="btn btn-success" value="Ingresar"/>
-		</form>
-	</div>
+<body ng-app="RinaDent">
 	
-	<script src="lib/jquery-2.2.0.js"></script>
-	<script src="lib/bootstrap.min.js"></script>
+	<div ng-include="'views/template/header.html'"></div>
+
+	<div ui-view></div>
+
+	<div ng-include="'views/template/footer.html'"></div>
+	
+
+	<!-- Jquery -->
+	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- Angular js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+	
+
+	<!-- app   -->
+	<script src="scripts/app.js"></script>
+
+	<!-- conrtollers -->
+	<script src="scripts/controllers/usuarios.js"></script>
+
+	<!-- script -->
+	<script src="scripts/services/usuarios.js"></script>
+
 
 </body>
 </html>
