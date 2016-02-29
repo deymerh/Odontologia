@@ -4,7 +4,7 @@ var app = angular.module('RinaDent', [
 	'ui.router'
 ])
 
-app.constant('ApiUrl', 'http://localhost/rinadent');
+app.constant('ApiUrl', 'http://localhost/backend');
 
 app.config(function($stateProvider, $urlRouterProvider){
 
