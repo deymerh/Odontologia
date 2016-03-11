@@ -44,7 +44,7 @@ include_once("controllers/usuarios.php");
 
 // GET route
 $app->get('/',function () {
-    echo "Nombre de la clinica xD";
+    echo "RinaDent";
 });
 
 // POST route
