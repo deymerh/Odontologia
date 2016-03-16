@@ -5,7 +5,7 @@ var app = angular.module('RinaDent', [
 ])
 
 //app.constant('ApiUrl', 'http://localhost/backend');
-app.constant('ApiUrl', 'http://localhost/Odontologia_Rina_Dent/Odontologia/backend');
+app.constant('ApiUrl', 'http://localhost/rinadent/backend');
 
 
 

@@ -10,10 +10,20 @@ $app->post('/login', function (){
     $q     = "SELECT * FROM tb_usuarios WHERE usr_usuario = '$usr_usuario' AND usr_password = '$usr_password'";
     $data = $db->get_results($q);
 
-    if ($data < 1) {
-        $data = array('message' =>  'Login incorrecto');
-    }
+    // if ($data < 1) {
+    //     $data = array('message' =>  'Login incorrecto');
+    // }
 
     echo json_encode($data);
 
+});
+
+$app->get('/getUsers', function(){
+
+    global $db;
+
+    $q = "SELECT * FROM tb_usuarios";
+
+    $data = $db->get_row($q);
+    echo json_encode($data);
 });
