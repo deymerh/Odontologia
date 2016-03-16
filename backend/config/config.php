@@ -11,7 +11,7 @@
 			//DESARROLLO DB
 			if (!defined('DB_USUARIO')) define('DB_USUARIO', 'root');//
 			if (!defined('DB_CLAVE')) define('DB_CLAVE', '');
-			if (!defined('DB_NOMBRE')) define('DB_NOMBRE', 'rinaDentDB');
+			if (!defined('DB_NOMBRE')) define('DB_NOMBRE', 'rinadentdb');
 			if (!defined('DB_HOST')) define('DB_HOST', 'localhost');
 
 			include_once "ez_sql/ez_sql_core.php";
