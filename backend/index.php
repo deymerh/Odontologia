@@ -30,8 +30,7 @@ $app->config('debug', true);
 
 
 
-include_once("controllers/usuarios.php");
-
+include_once("controllers/login.php");
 
 /**
  * Step 3: Define the Slim application routes
@@ -44,7 +43,7 @@ include_once("controllers/usuarios.php");
 
 // GET route
 $app->get('/',function () {
-    echo "RinaDent";
+    echo "REST API the Ropa Limpia";
 });
 
 // POST route
