@@ -7,6 +7,8 @@ var app = angular.module('RinaDent', [
 //app.constant('ApiUrl', 'http://localhost/backend');
 app.constant('ApiUrl', 'http://198.211.107.55:8000');
 
+
+
 app.config(function($stateProvider, $urlRouterProvider){
 
 	$stateProvider

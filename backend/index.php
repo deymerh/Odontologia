@@ -43,7 +43,7 @@ include_once("controllers/login.php");
 
 // GET route
 $app->get('/',function () {
-    echo "REST API the Ropa Limpia";
+echo "RinaDent";
 });
 
 // POST route
