@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('LoginController', function(LoginFactory){
+app.controller('LoginController', function(LoginFactory, $location){
 
 	var vm = this;
 
@@ -9,7 +9,8 @@ app.controller('LoginController', function(LoginFactory){
 	vm.login = function(user){
 		LoginFactory.login(user).then(function(data){
 			console.log(data.data);
-			alert('Login correcto!')
+			alert('Login correcto!');
+			$location.url('/menu');
 		})
 	}
 

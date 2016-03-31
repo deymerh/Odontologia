@@ -1,7 +1,7 @@
 <?php 
 
 // login user
-$app->post('/login', function (){
+$app->post('/login', function(){
 
     $usr_usuario     =$_REQUEST['usuario'];
     $usr_password  =$_REQUEST['password'];

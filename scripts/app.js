@@ -9,8 +9,13 @@ app.constant('ApiUrl', 'http://198.211.107.55:8000');
 
 
 
-app.config(function($stateProvider, $urlRouterProvider){
-
+app.config(function($stateProvider, $urlRouterProvider, $httpProvider){
+	
+//	$httpProvider.defaults.headers.common = {};
+//	$httpProvider.defaults.headers.post = {};
+//  	$httpProvider.defaults.headers.put = {};
+// 	$httpProvider.defaults.headers.patch = {};
+	
 	$stateProvider
 		.state('login', {
 			url: '/login',
