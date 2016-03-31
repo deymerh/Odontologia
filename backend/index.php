@@ -47,12 +47,12 @@ echo "RinaDent";
 });
 
 // POST route
-$app->post(
-    '/post',
-    function () {
-        echo 'This is a POST route';
-    }
-);
+//$app->post(
+//    '/post',
+//    function () {
+//        echo 'This is a POST route';
+//    }
+//);
 
 // PUT route
 $app->put(
